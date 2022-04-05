@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint anotherTurret;
     BuildManager buildManager;
 
     void Start()
@@ -11,16 +13,16 @@ public class Shop : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
-    public void PurchaseStandardTurret()
+    public void SelectStandardTurret()
     {
-        Debug.Log("stanbdard turret Purchased");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        Debug.Log("stanbdard turret Selected");
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
-    public void PurchaseAnotherTurret()
+    public void SelectAnotherTurret()
     {
-        Debug.Log("Another turret Purchased");
-        buildManager.SetTurretToBuild(buildManager.anotherTurretPrefab);
+        Debug.Log("Another turret Selected");
+        buildManager.SelectTurretToBuild(anotherTurret);
     }
 
 }
