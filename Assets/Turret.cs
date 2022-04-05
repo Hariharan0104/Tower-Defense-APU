@@ -12,6 +12,8 @@ public class Turret : MonoBehaviour
     public float fireRate = 1f;
     private float fireCountdown = 0f;
 
+    public int damageOverTime = 30; //30 dmg per second
+
     public GameObject bulletPrefab;
     public Transform firePoint;
     // Start is called before the first frame update
@@ -51,12 +53,20 @@ public class Turret : MonoBehaviour
         if(target == null)
             return;
 
+        //function_slowing down
+
             if(fireCountdown <= 0f)
             {
                 Shoot();
+                
                 fireCountdown = 1f/fireRate;
             }
             fireCountdown -= Time.deltaTime;
+    }
+
+    void Slow()
+    {
+        target.GetComponent<Enemy>().TakeDamage(damageOverTime * Time.deltaTime);
     }
 
     void Shoot()

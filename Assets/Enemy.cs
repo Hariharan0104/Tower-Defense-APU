@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public float speed = 10f;
-public int health = 100;
+    public float health = 100;
     private Transform target;
     private int wavepointIndex = 0;
 
@@ -13,7 +13,7 @@ public int health = 100;
     {
         target = Waypoints.points[0];
     }
-    public void TakeDamage(int amount)
+    public void TakeDamage(float amount)
     {
         health -= amount;
 
