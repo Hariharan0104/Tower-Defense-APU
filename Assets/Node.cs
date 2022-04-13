@@ -10,6 +10,9 @@ public class Node : MonoBehaviour
     public Vector3 positionOffset;
     [Header("Optional")]
     public GameObject turret;
+
+    [HideInInspector]
+    public TurretBlueprint turretBlueprint;
     private Renderer rend;
     private Color startColor;
     BuildManager buildManager;
@@ -31,17 +34,52 @@ public class Node : MonoBehaviour
        if(EventSystem.current.IsPointerOverGameObject())
         return;
         
-        if(!buildManager.CanBuild)
-        return;
+       
 
         if(turret != null)
         {
-            Debug.Log("Cant build there!");
+            buildManager.SelectNode(this);
             return;
         }
 
-        buildManager.BuildTurretOn(this);
+         if(!buildManager.CanBuild)
+        return;
+
+        
+
+        BuildTurret(buildManager.GetTurretToBuild());
     }
+
+    void BuildTurret (TurretBlueprint blueprint)
+    {
+         if(PlayerStats.Money < blueprint.cost)
+            {
+                Debug.Log("not enuf money");
+                return;
+            }
+            PlayerStats.Money -= blueprint.cost;
+
+           
+            GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+            turret = _turret;
+
+            turretBlueprint = blueprint;
+
+           GameObject effect =  Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity );
+            Destroy(effect, 6f);
+            Debug.Log("Turret build!");
+        
+    }
+    public void SellTurret()
+    {
+        PlayerStats.Money +=  turretBlueprint.GetSellAmount();
+
+        Destroy(turret);
+        turretBlueprint = null;
+        
+
+    }
+
 
     void OnMouseEnter ()
     {
