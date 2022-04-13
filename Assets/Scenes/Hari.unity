@@ -3083,11 +3083,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurret:
-    prefab: {fileID: 0}
-    cost: 100
-  anotherTurret:
-    prefab: {fileID: 0}
+    prefab: {fileID: 8140266264199261591, guid: 660d1f491832e4b4693e6bd4706d5db1, type: 3}
     cost: 200
+  anotherTurret:
+    prefab: {fileID: 8140266264199261591, guid: fd51e7f3a8ca9b641adb7689c741faf1, type: 3}
+    cost: 100
 --- !u!1 &1162431439
 GameObject:
   m_ObjectHideFlags: 0
