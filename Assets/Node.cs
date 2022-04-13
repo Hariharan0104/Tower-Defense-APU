@@ -73,6 +73,9 @@ public class Node : MonoBehaviour
     public void SellTurret()
     {
         PlayerStats.Money +=  turretBlueprint.GetSellAmount();
+        
+        GameObject effect =  Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity );
+        Destroy(effect, 6f);
 
         Destroy(turret);
         turretBlueprint = null;
