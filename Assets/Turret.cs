@@ -64,10 +64,10 @@ public class Turret : MonoBehaviour
             fireCountdown -= Time.deltaTime;
     }
 
-    // void Slow()
-    // {
-    //     target.GetComponent<Enemy>().TakeDamage(damageOverTime * Time.deltaTime);
-    // }
+    void Slow()
+    {
+        target.GetComponent<Enemy>().TakeDamage(damageOverTime * Time.deltaTime);
+    }
 
     void Shoot()
     {
@@ -77,7 +77,6 @@ public class Turret : MonoBehaviour
         if(bullet != null)
         {
             bullet.Seek(target);
-            
         }
     }
 
