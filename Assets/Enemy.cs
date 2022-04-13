@@ -4,42 +4,23 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float startSpeed = 10f;
-
-    [HideInInspector]
-    public float speed ;
+    public float speed = 10f;
     public float health = 100;
+    private Transform target;
+    private int wavepointIndex = 0;
 
-    public float slowPct = .5f;
-
-    void Start()
+    private void Start() 
     {
-        speed = startSpeed;
+        target = Waypoints.points[0];
     }
-
-    public void Slow()
-    {
-	    speed = startSpeed * (1f- slowPct);
-        
-    }
-
     public void TakeDamage(float amount)
     {
         health -= amount;
-        Slow();
-
-        Invoke("OldSpeed", 1.0f);
-        
 
         if(health<=0)
         {
             Die();
         }
-    }
-    
-    public void OldSpeed()
-    {
-        speed = startSpeed;
     }
 
     void Die()
@@ -47,5 +28,30 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
      }
 
+    private void Update() {
+        Vector3 dir = target.position - transform.position;
+        transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
+        if(Vector3.Distance(transform.position, target.position) <= 0.2f)
+        {
+            GetNextWaypoint();
+        }
+    }
+
+    void GetNextWaypoint()
+    {
+        if(wavepointIndex >= Waypoints.points.Length - 1)
+        {
+           EndPath();
+            return;
+        }
+        wavepointIndex++;
+        target = Waypoints.points[wavepointIndex];
+    }
+
+    void EndPath()
+    {
+        PlayerStats.Lives--;
+        Destroy(gameObject);
+    }
 }
