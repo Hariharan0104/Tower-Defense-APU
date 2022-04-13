@@ -36,4 +36,9 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
+
+    public void Menu()
+    {
+        Toggle();
+    }
 }
