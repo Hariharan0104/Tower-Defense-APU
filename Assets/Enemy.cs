@@ -54,7 +54,10 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        WaveSpawner.EnemiesAlive--;
         Destroy(gameObject);
+        //show death effect
+
      }
 
 
