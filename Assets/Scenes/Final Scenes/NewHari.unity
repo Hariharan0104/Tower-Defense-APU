@@ -766,6 +766,10 @@ MonoBehaviour:
   scrollSpeed: 5
   minY: 2
   maxY: 10
+  minX: -2
+  maxX: 1
+  minZ: -8
+  maxZ: -4
 --- !u!1 &191987199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,20 +5703,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - enemy: {fileID: 7288110575213977651, guid: 3a7e06bc611f23a4ebf53aee384c7018, type: 3}
-    count: 2
-    rate: 3
+    count: 5
+    rate: 1
   - enemy: {fileID: 7288110575213977651, guid: 3f3b45c3de7bf874d9de2f5a570d4188, type: 3}
     count: 2
-    rate: 2
+    rate: 1
   - enemy: {fileID: 7288110575213977651, guid: 6c76473eee1300c4cbd99258983eb3e4, type: 3}
     count: 5
-    rate: 2
+    rate: 1
   - enemy: {fileID: 7288110575213977651, guid: 6c76473eee1300c4cbd99258983eb3e4, type: 3}
     count: 5
-    rate: 2
+    rate: 1
   - enemy: {fileID: 7288110575213977651, guid: 3a7e06bc611f23a4ebf53aee384c7018, type: 3}
     count: 10
-    rate: 2
+    rate: 1
   enemyPrefab: {fileID: 4630413596592489985, guid: 3a7e06bc611f23a4ebf53aee384c7018, type: 3}
   spawnPoint: {fileID: 665442958}
   timeBetweenWaves: 5

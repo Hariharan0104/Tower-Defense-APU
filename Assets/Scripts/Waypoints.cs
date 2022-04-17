@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Waypoints : MonoBehaviour
 {
+    //making list and placing child positions into it
     public static Transform[] points;
 
     void Awake()

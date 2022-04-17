@@ -14,13 +14,14 @@ public class CameraController : MonoBehaviour
     public float minY = 10f;
     public float maxY = 80f;
 
-    public float minYt = 1f;
-    public float maxYt = 10f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public float minX= 0f;
+    public float maxX= 0f;
+
+       public float minZ = 0f;
+    public float maxZ = 0f;
+
+
 
     // Update is called once per frame
     void Update()
@@ -31,9 +32,7 @@ public class CameraController : MonoBehaviour
         if(Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
-
-           
-            
+ 
         }
         if(Input.GetKey("s") || Input.mousePosition.y <=  panBorderThickness)
         {
@@ -48,9 +47,11 @@ public class CameraController : MonoBehaviour
         {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }
-         Vector3 clampedPos = transform.position;
-        clampedPos.z = Mathf.Clamp(clampedPos.z,-10f , 0f);
-        clampedPos.x = Mathf.Clamp(clampedPos.x,-3f , 2f);
+
+
+        Vector3 clampedPos = transform.position;
+        clampedPos.z = Mathf.Clamp(clampedPos.z,minZ , maxZ);
+        clampedPos.x = Mathf.Clamp(clampedPos.x,minX , maxX);
         transform.position = clampedPos;
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");

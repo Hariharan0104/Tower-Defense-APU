@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 8140266264199261591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.12, y: 0.519, z: -0.71}
-  m_LocalScale: {x: 0.32929, y: 0.32929, z: 0.32929}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 8140266263907771926}
   m_Father: {fileID: 0}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 2
+  range: 4
   enemyTag: Enemy
   fireRate: 4
   damageOverTime: 0

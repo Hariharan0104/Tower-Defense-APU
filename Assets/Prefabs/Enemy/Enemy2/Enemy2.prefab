@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 1500722065}
   - component: {fileID: -2522529196292186827}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -281,7 +281,7 @@ Transform:
   m_GameObject: {fileID: 7288110575213977651}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.11, y: 0.279, z: 0.057}
-  m_LocalScale: {x: 0.1405656, y: 0.1405656, z: 0.1405656}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 3071194779804018274}
   m_Father: {fileID: 0}
@@ -314,7 +314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 969356dbbf6bac840ae6905b05316356, type: 2}
+  - {fileID: 2100000, guid: 3f5364a93eee1a04da68d4e5d4c3ae2d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

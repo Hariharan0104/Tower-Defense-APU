@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 8140266264199261591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.12, y: 0.519, z: -0.71}
-  m_LocalScale: {x: 0.32929, y: 0.32929, z: 0.32929}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 8140266263907771926}
   m_Father: {fileID: 0}
@@ -144,5 +144,6 @@ MonoBehaviour:
   range: 2
   enemyTag: Enemy
   fireRate: 1
+  damageOverTime: 30
   bulletPrefab: {fileID: 6550542848919797217, guid: 0eacd94d33db48f41b148fb665072726, type: 3}
   firePoint: {fileID: 8140266263907771926}
