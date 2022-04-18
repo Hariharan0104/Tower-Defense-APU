@@ -8,6 +8,7 @@ public class spawnCoins : MonoBehaviour
     public float yCor;
     public float zCor;
     public GameObject coinPrefab;
+    public GameObject coinTowerPrefab;
 
     private bool canSpawn = true;
     // Start is called before the first frame update
@@ -38,7 +39,7 @@ public class spawnCoins : MonoBehaviour
         yield return new WaitForSecondsRealtime (num);
         xCor = Random.Range(-4f,4f);
         zCor =  Random.Range(-7f,1f);
-        GameObject coin =  (GameObject)Instantiate (coinPrefab, new Vector3(xCor,yCor,zCor), Quaternion.identity);
+        GameObject coin =  (GameObject)Instantiate (coinPrefab, coinTowerPrefab.transform.position, Quaternion.identity);
         Destroy(coin, 3f);
         canSpawn = !canSpawn;
         
