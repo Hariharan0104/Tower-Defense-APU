@@ -15,7 +15,7 @@ public class NodeUI : MonoBehaviour
 
         transform.position = target.GetBuildPosition();
 
-        sellAmount.text = "$" + target.turretBlueprint.GetSellAmount();
+        sellAmount.text = target.turretBlueprint.GetSellAmount().ToString();
 
         ui.SetActive(true);
 
