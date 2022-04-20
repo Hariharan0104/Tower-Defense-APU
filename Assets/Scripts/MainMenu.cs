@@ -19,4 +19,39 @@ public class MainMenu : MonoBehaviour
         {
             Application.Quit();
         }
+
+    public void StartGame()
+    {
+        sceneFader.FadeTo("StageSelect");
+    }
+
+    public void OpenOption()
+    {
+        sceneFader.FadeTo("Options");
+    }
+
+    public void CloseOption()
+    {
+        sceneFader.FadeTo(levelToLoad);
+    }
+
+    public void How2play()
+    {
+        sceneFader.FadeTo(levelToLoad);
+    }
+
+    public void CloseHow2play()
+    {
+        sceneFader.FadeTo(levelToLoad);
+    }
+
+    public void Credit()
+    {
+        sceneFader.FadeTo(levelToLoad);
+    }
+
+    public void CloseCredit()
+    {
+        sceneFader.FadeTo(levelToLoad);
+    }
 }
