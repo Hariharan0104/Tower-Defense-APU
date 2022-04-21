@@ -4007,29 +4007,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin_Turret:
-    prefab: {fileID: 2473541876297721822, guid: ed23cfe07cc0c214fba8ae2f8d465819, type: 3}
+    prefab: {fileID: 2282501468110492685, guid: ed23cfe07cc0c214fba8ae2f8d465819, type: 3}
     cost: 10
   tanker_Turret:
-    prefab: {fileID: 8545002327197416, guid: b47b0b8454d86ee4fb23b7c2f8837606, type: 3}
-    cost: 0
+    prefab: {fileID: 3760049347996338950, guid: b47b0b8454d86ee4fb23b7c2f8837606, type: 3}
+    cost: 20
   Turret1:
-    prefab: {fileID: 1365241995053241222, guid: 98886de4152174949bbfc7f4a79b5f2e, type: 3}
-    cost: 0
+    prefab: {fileID: 7572647793900058788, guid: 98886de4152174949bbfc7f4a79b5f2e, type: 3}
+    cost: 30
   Turret2:
-    prefab: {fileID: 4204695943735175380, guid: 9591eb3f6c050114b8f547d12f615d14, type: 3}
-    cost: 0
+    prefab: {fileID: 2226126447847258923, guid: 9591eb3f6c050114b8f547d12f615d14, type: 3}
+    cost: 40
   Turret3:
-    prefab: {fileID: 9009527618646016615, guid: 8fe7f90300bf3ba4489c6e543cb3782a, type: 3}
-    cost: 0
+    prefab: {fileID: 66192423106337035, guid: 8fe7f90300bf3ba4489c6e543cb3782a, type: 3}
+    cost: 50
   Turret4:
-    prefab: {fileID: 327266180217056906, guid: 52dbc00f6f8d9524aacc7e592b4990e8, type: 3}
-    cost: 0
+    prefab: {fileID: 1930066122675067741, guid: 52dbc00f6f8d9524aacc7e592b4990e8, type: 3}
+    cost: 60
   Turret5:
-    prefab: {fileID: 5151064362959876867, guid: 498b14d5630e3ae46b11e7c61e27cac9, type: 3}
-    cost: 0
+    prefab: {fileID: 3445693724701612053, guid: 498b14d5630e3ae46b11e7c61e27cac9, type: 3}
+    cost: 70
   Turret6:
-    prefab: {fileID: 8459126854697330921, guid: eb45100fcdb44f84eb5fd74f76667ba7, type: 3}
-    cost: 0
+    prefab: {fileID: 4700323059614940609, guid: eb45100fcdb44f84eb5fd74f76667ba7, type: 3}
+    cost: 80
 --- !u!1 &1162431439
 GameObject:
   m_ObjectHideFlags: 0
