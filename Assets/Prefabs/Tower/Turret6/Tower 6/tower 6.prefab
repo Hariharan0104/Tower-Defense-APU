@@ -171,6 +171,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5364128313023178619}
+  - component: {fileID: 1782357110649834311}
+  - component: {fileID: 2121290479379482933}
   m_Layer: 0
   m_Name: tower 6
   m_TagString: Untagged
@@ -185,9 +187,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4700323059614940609}
-  m_LocalRotation: {x: -0, y: 0.9755888, z: -0, w: 0.21960518}
+  m_LocalRotation: {x: 0, y: 0.97558826, z: 0, w: 0.21960776}
   m_LocalPosition: {x: -44.036488, y: 0, z: 183.47269}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_Children:
   - {fileID: 5660681277784396178}
   - {fileID: 3590324228328462965}
@@ -198,6 +200,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 154.628, z: 0}
+--- !u!114 &1782357110649834311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700323059614940609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8940415588fbcc24186b1f6193d241d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  range: 15
+  enemyTag: Enemy
+  fireRate: 1
+  damageOverTime: 30
+  bulletPrefab: {fileID: 6550542848919797217, guid: ba8ca5d1d13e8c54c90391aadab5a229, type: 3}
+  firePoint: {fileID: 5664771008948167605}
+--- !u!64 &2121290479379482933
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700323059614940609}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &4711146147250072947
 GameObject:
   m_ObjectHideFlags: 0
