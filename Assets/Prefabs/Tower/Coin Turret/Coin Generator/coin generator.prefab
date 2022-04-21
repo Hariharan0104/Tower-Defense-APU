@@ -85,6 +85,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPrefab: {fileID: 6055369329976466331, guid: 83583231f850b054aa8bd34b37a28a79, type: 3}
+  coinAdded: 20
 --- !u!1 &2738577360333046132
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 602963013}
   m_Layer: 0
   m_Name: logo_4
-  m_TagString: Untagged
+  m_TagString: coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,8 +112,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 8.577313, z: 2.9216788}
+  m_Center: {x: 0, y: 0.069987774, z: 0.20403579}
 --- !u!95 &602963013
 Animator:
   serializedVersion: 3

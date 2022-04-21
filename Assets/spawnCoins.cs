@@ -6,6 +6,7 @@ public class spawnCoins : MonoBehaviour
 {
     
     public GameObject coinPrefab;
+    public int coinAdded;
 
     private bool canSpawn = true;
     // Start is called before the first frame update
@@ -24,14 +25,28 @@ public class spawnCoins : MonoBehaviour
         }
         
         
-        
+        if (Input.GetMouseButtonDown(0))
+         {
+             RaycastHit raycastHit;
+             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+             if (Physics.Raycast(ray, out raycastHit, 1000f))
+             {
+                 if (raycastHit.transform != null)
+                 {
+                    
+                     ObjectClicked(raycastHit.transform.gameObject);
+                 }
+             }
+         }
         
     }
 
     IEnumerator Delay()
     {
         Vector3 center = transform.position;
-        Vector3 pos = RandomCircle(center, .08f);
+        Vector3 pos = RandomCircle(center, .1f);
+        pos.y = pos.y + 1f;
+
         Quaternion rot = Quaternion.FromToRotation(Vector3.forward, center-pos);
         
        canSpawn = !canSpawn;
@@ -57,4 +72,15 @@ public class spawnCoins : MonoBehaviour
          pos.z = center.z;
          return pos;
      }
+
+
+      public void ObjectClicked(GameObject gameObject)
+ {
+     if(gameObject.tag=="coin")
+     {
+         Destroy(gameObject);
+         //add coins
+         PlayerStats.Money = PlayerStats.Money + coinAdded;
+     }
+ }
 }
