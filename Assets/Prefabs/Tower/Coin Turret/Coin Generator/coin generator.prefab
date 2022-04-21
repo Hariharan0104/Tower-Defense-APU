@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1506104780374199991}
   - component: {fileID: 5205546186752868003}
   - component: {fileID: 7497909758030131142}
+  - component: {fileID: 557524987}
   m_Layer: 0
   m_Name: coin generator
   m_TagString: Untagged
@@ -71,6 +72,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &557524987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2282501468110492685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 992f4dff39dff23499755aad885b2fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefab: {fileID: 6055369329976466331, guid: 83583231f850b054aa8bd34b37a28a79, type: 3}
 --- !u!1 &2738577360333046132
 GameObject:
   m_ObjectHideFlags: 0
