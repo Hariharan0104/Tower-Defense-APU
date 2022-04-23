@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour
 {
+    public bool checkTower;
     public Color hoverColor;
     public Color notEnoughMoneyColor;
     public Vector3 positionOffset;
@@ -52,7 +53,22 @@ public class Node : MonoBehaviour
 
     void BuildTurret (TurretBlueprint blueprint)
     {
-         if(PlayerStats.Money < blueprint.cost)
+        // if(blueprint.prefab.tag == "Tank_Tower") //&& this.tag == "groundTile")
+        // {
+        //     checkTower = false;
+        // }
+        // else
+        // {
+        //     checkTower = true;
+        // }
+
+        // if(blueprint.prefab.tag == "Tank_Tower" && this.tag == "groundTile")
+        // {
+        //     checkTower = true;
+        // }
+        // if(checkTower)
+        // {
+             if(PlayerStats.Money < blueprint.cost)
             {
                 Debug.Log("not enuf money");
                 return;
@@ -68,6 +84,8 @@ public class Node : MonoBehaviour
            GameObject effect =  Instantiate(buildManager.buildEffect, GetBuildPosition(), Quaternion.identity );
             Destroy(effect, 6f);
             Debug.Log("Turret build!");
+        //}
+        
         
     }
     public void SellTurret()
