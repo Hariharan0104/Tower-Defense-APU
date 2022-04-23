@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Mayo.unity
+    guid: add2a550890ec4e4fad48ab2f510acc5
+  - enabled: 1
+    path: Assets/Scenes/Extra.unity
+    guid: fcbfc5c0d8c2d8247b332ca4b9cb9a18
   m_configObjects: {}

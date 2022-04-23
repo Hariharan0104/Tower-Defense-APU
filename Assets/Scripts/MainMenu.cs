@@ -47,7 +47,7 @@ public class MainMenu : MonoBehaviour
 
     public void Credit()
     {
-        sceneFader.FadeTo(levelToLoad);
+        sceneFader.FadeTo("credits");
     }
 
     public void CloseCredit()
