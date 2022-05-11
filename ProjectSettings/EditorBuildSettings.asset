@@ -5,13 +5,46 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: add2a550890ec4e4fad48ab2f510acc5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Extra.unity
     guid: fcbfc5c0d8c2d8247b332ca4b9cb9a18
   - enabled: 1
-    path: Assets/Scenes/credits.unity
+    path: Assets/Scenes/Completed Scenes/MainMenu.unity
+    guid: add2a550890ec4e4fad48ab2f510acc5
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/credits.unity
     guid: 3a48171cf1b5d734db372e00f058c224
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/HowtoPlay.unity
+    guid: 64a5d512e15525a47bcb01c09ef364c4
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Options.unity
+    guid: c57e92f4aba1e994b9a4da4a609d4961
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Tutorial Lvl.unity
+    guid: eb966cb576f1c0f4385c91d93543502e
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl1.unity
+    guid: 59833ef7463628a44b1a437e790c776b
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl2.unity
+    guid: ed05fea3734977c499ad7fa34a1c4249
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl3.unity
+    guid: d9d7036c45343de42aea3031d1d1ca55
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl4.unity
+    guid: ab9e59d2a30b9284cba8f37970233b7c
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl5.unity
+    guid: 09619ce969de34542b6812ee903a96d7
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl6.unity
+    guid: 4430ca47712291548a84c07a34543d1b
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl7.unity
+    guid: a6f93baa230fec74da823f04f4c0c39d
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Lvl8.unity
+    guid: 08a6e423c344ef94ba66ba6758c6918d
   m_configObjects: {}

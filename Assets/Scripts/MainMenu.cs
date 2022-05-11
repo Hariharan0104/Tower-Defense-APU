@@ -5,15 +5,15 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public string levelToLoad = "";
+    // public string levelToLoad = "";
 
     public SceneFader sceneFader;
-    public void Play() {
-        {
-            sceneFader.FadeTo(levelToLoad);
-        }
+    // public void Play() {
+    //     {
+    //         sceneFader.FadeTo("Tutorial Lvl");
+    //     }
         
-    }
+    // }
 
     public void leave()
         {
@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        sceneFader.FadeTo("StageSelect");
+        sceneFader.FadeTo("Tutorial Lvl");
     }
 
     public void OpenOption()
@@ -32,12 +32,12 @@ public class MainMenu : MonoBehaviour
 
     public void CloseOption()
     {
-        sceneFader.FadeTo(levelToLoad);
+        //sceneFader.FadeTo();
     }
 
     public void How2play()
     {
-        sceneFader.FadeTo(levelToLoad);
+        sceneFader.FadeTo("HowtoPlay");
     }
 
     public void CloseHow2play()
