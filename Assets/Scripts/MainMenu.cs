@@ -42,7 +42,7 @@ public class MainMenu : MonoBehaviour
 
     public void CloseHow2play()
     {
-        sceneFader.FadeTo(levelToLoad);
+        sceneFader.FadeTo("MainMenu");
     }
 
     public void Credit()
@@ -52,6 +52,6 @@ public class MainMenu : MonoBehaviour
 
     public void CloseCredit()
     {
-        sceneFader.FadeTo(levelToLoad);
+        sceneFader.FadeTo("MainMenu");
     }
 }
