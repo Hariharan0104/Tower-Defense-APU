@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Completed Scenes/Options.unity
     guid: c57e92f4aba1e994b9a4da4a609d4961
   - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Stage Lvl.unity
+    guid: 614bbff7e439b024c876d9871d993b58
+  - enabled: 1
     path: Assets/Scenes/Completed Scenes/Tutorial Lvl.unity
     guid: eb966cb576f1c0f4385c91d93543502e
   - enabled: 1
