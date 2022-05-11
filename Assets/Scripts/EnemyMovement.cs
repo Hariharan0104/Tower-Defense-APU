@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Enemy))]
 public class EnemyMovement : MonoBehaviour
 {
+Quaternion enemyRotationtowaypoint;
    private Transform target;
     private int wavepointIndex = 0;
 
@@ -19,6 +20,9 @@ public class EnemyMovement : MonoBehaviour
         private void Update() {
         Vector3 dir = target.position - transform.position;
         transform.Translate(dir.normalized * enemy.speed * Time.deltaTime, Space.World);
+        enemyRotationtowaypoint = Quaternion.LookRotation(dir);
+        
+        transform.rotation = Quaternion.Slerp(transform.rotation, enemyRotationtowaypoint, Time.deltaTime * 10);
 
         if(Vector3.Distance(transform.position, target.position) <= 0.2f)
         {
