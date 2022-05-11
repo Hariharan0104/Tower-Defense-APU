@@ -22,7 +22,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        sceneFader.FadeTo("Tutorial Lvl");
+        sceneFader.FadeTo("Stage Lvl");
     }
 
     public void OpenOption()
