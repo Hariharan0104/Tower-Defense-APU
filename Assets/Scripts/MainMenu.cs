@@ -37,19 +37,26 @@ public class MainMenu : MonoBehaviour
     }
 
 
-
+    //Option page
     public void CloseOption()
     {
-        //sceneFader.FadeTo();
+        sceneFader.FadeTo("MainMenu");
     }
-
+    //HowToPlay page
     public void CloseHow2play()
     {
         sceneFader.FadeTo("MainMenu");
     }
-
+    //Credit page
     public void CloseCredit()
     {
         sceneFader.FadeTo("MainMenu");
     }
+
+    //Stage levels page
+    public void lvl(string lvlName)
+    {
+        sceneFader.FadeTo(lvlName);
+    }
+
 }
