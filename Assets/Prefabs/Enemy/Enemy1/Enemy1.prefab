@@ -867,6 +867,7 @@ GameObject:
   - component: {fileID: 5292027924118216855}
   - component: {fileID: 4006564673529331282}
   - component: {fileID: 473716019954083176}
+  - component: {fileID: 1357957080}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -904,9 +905,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99333520be1a58c4dab5df51948722d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 1
+  startSpeed: 0.5
   speed: 1
-  startHealth: 100
+  startHealth: 200
   slowPct: 0.5
   healthBar: {fileID: 6676310696274486665}
 --- !u!114 &5292027924118216855
@@ -930,9 +931,9 @@ MeshCollider:
   m_GameObject: {fileID: 5232901623403894244}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
 --- !u!95 &473716019954083176
@@ -954,6 +955,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &1357957080
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5232901623403894244}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.1818461
+  m_Height: 4.416213
+  m_Direction: 1
+  m_Center: {x: -0.12445219, y: 1.708106, z: 0}
 --- !u!1 &5483654378549814808
 GameObject:
   m_ObjectHideFlags: 0
