@@ -22,9 +22,41 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""PlayerInputActions"",
-    ""maps"": [],
+    ""maps"": [
+        {
+            ""name"": ""Player"",
+            ""id"": ""03785de2-5b06-4735-b6ab-af4de8460d61"",
+            ""actions"": [
+                {
+                    ""name"": ""Swipe"",
+                    ""type"": ""Button"",
+                    ""id"": ""ec1df1d6-8683-4d27-80af-99d4443c361b"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""844f08e7-7a85-4266-aa5a-b219884e46d9"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Swipe"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        }
+    ],
     ""controlSchemes"": []
 }");
+        // Player
+        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
+        m_Player_Swipe = m_Player.FindAction("Swipe", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -79,5 +111,42 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     public int FindBinding(InputBinding bindingMask, out InputAction action)
     {
         return asset.FindBinding(bindingMask, out action);
+    }
+
+    // Player
+    private readonly InputActionMap m_Player;
+    private IPlayerActions m_PlayerActionsCallbackInterface;
+    private readonly InputAction m_Player_Swipe;
+    public struct PlayerActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public PlayerActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Swipe => m_Wrapper.m_Player_Swipe;
+        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
+        public void SetCallbacks(IPlayerActions instance)
+        {
+            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
+            {
+                @Swipe.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwipe;
+                @Swipe.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwipe;
+                @Swipe.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSwipe;
+            }
+            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Swipe.started += instance.OnSwipe;
+                @Swipe.performed += instance.OnSwipe;
+                @Swipe.canceled += instance.OnSwipe;
+            }
+        }
+    }
+    public PlayerActions @Player => new PlayerActions(this);
+    public interface IPlayerActions
+    {
+        void OnSwipe(InputAction.CallbackContext context);
     }
 }

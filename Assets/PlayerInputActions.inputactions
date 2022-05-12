@@ -1,1 +1,34 @@
-{}
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "03785de2-5b06-4735-b6ab-af4de8460d61",
+            "actions": [
+                {
+                    "name": "Swipe",
+                    "type": "Button",
+                    "id": "ec1df1d6-8683-4d27-80af-99d4443c361b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "844f08e7-7a85-4266-aa5a-b219884e46d9",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swipe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
