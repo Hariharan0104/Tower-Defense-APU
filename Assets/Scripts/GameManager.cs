@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
     {
         gameEnded = true;
         Debug.Log ("End");
+        SceneManager.LoadScene("Game Over");
     }
 
     //on click -- PlayerStats.Money += 10 (points)

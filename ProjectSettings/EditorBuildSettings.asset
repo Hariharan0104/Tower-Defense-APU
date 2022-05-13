@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Completed Scenes/New Folder/Lvl8.unity
     guid: 08a6e423c344ef94ba66ba6758c6918d
+  - enabled: 1
+    path: Assets/Scenes/Completed Scenes/Game Over.unity
+    guid: 76f431fefc45c4d4e96ba55db17c5b9b
   m_configObjects: {}

@@ -819,6 +819,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 488302967}
   m_CullTransparentMesh: 1
+--- !u!4 &500435060 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+  m_PrefabInstance: {fileID: 1290244175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &531843539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1734856565}
+  - {fileID: 500435060}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2491,6 +2497,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1290244175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 637527558}
+    m_Modifications:
+    - target: {fileID: 7623059328913905104, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_Name
+      value: Waypoint (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8324138027465165242, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eed0b6bbc64626e4cb8492c7ae89478c, type: 3}
 --- !u!224 &1309817959 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2327328267130201475, guid: 46964f7da38eb6043840b7a57764cb69, type: 3}
@@ -3232,10 +3295,10 @@ MonoBehaviour:
   - enemy: {fileID: 820807386623352080, guid: b28a7271107915547abd1d816ac0e29e, type: 3}
     count: 10
     rate: 1
-  - enemy: {fileID: 7288110575213977651, guid: 3a7e06bc611f23a4ebf53aee384c7018, type: 3}
+  - enemy: {fileID: 5232901623403894244, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
     count: 10
     rate: 1
-  enemyPrefab: {fileID: 4630413596592489985, guid: 3a7e06bc611f23a4ebf53aee384c7018, type: 3}
+  enemyPrefab: {fileID: 4887761163564978014, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
   spawnPoint: {fileID: 665442958}
   timeBetweenWaves: 5
   waveCountdownText: {fileID: 488302969}
