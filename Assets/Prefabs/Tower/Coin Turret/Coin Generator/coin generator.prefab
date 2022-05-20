@@ -46,7 +46,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2282501468110492685}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8940415588fbcc24186b1f6193d241d0, type: 3}
   m_Name: 
@@ -57,7 +57,7 @@ MonoBehaviour:
   fireRate: 1
   damageOverTime: 30
   bulletPrefab: {fileID: 0}
-  firePoint: {fileID: 0}
+  firePoint: {fileID: 4630289615998246290}
 --- !u!64 &7497909758030131142
 MeshCollider:
   m_ObjectHideFlags: 0
