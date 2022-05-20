@@ -12,6 +12,7 @@ public class dontDestroy : MonoBehaviour
     }
     void Awake()
     {
+        PlayerPrefs.DeleteAll();
         DontDestroyOnLoad (transform.gameObject);
         if (instance == null)
          instance = transform.gameObject;

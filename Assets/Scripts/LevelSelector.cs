@@ -8,8 +8,9 @@ public class LevelSelector : MonoBehaviour
     public SceneFader fader;
     public Button[] lvlButtons;
 
-    void Start()
+    void Awake()
     {
+        //PlayerPrefs.DeleteAll();
         int levelReached = PlayerPrefs.GetInt("levelReached", 1);
         for (var i = 0; i < lvlButtons.Length; i++)
         {
@@ -21,9 +22,9 @@ public class LevelSelector : MonoBehaviour
         }
     }
     //use this at end of every levels
-    public void WinLevel()
-    {
-        PlayerPrefs.SetInt("levelReached", 2);
+    // public void WinLevel()
+    // {
+    //     PlayerPrefs.SetInt("levelReached", 2);
         
-    }
+    // }
 }

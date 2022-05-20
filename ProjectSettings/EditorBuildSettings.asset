@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Extra.unity
-    guid: fcbfc5c0d8c2d8247b332ca4b9cb9a18
   - enabled: 1
     path: Assets/Scenes/Completed Scenes/MainMenu.unity
     guid: add2a550890ec4e4fad48ab2f510acc5
@@ -24,32 +21,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Completed Scenes/Stage Lvl.unity
     guid: 614bbff7e439b024c876d9871d993b58
   - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Tutorial Lvl.unity
-    guid: eb966cb576f1c0f4385c91d93543502e
+    path: Assets/Scenes/Completed Scenes/Lvl1.unity
+    guid: 2bc5b5ba881c76045a6a4a0f4f9f3782
   - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl1.unity
-    guid: 59833ef7463628a44b1a437e790c776b
+    path: Assets/Scenes/Completed Scenes/Lvl2.unity
+    guid: 89bafd80aa56bb044b2412f29e01bbc2
   - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl2.unity
-    guid: ed05fea3734977c499ad7fa34a1c4249
+    path: Assets/Scenes/Completed Scenes/Lvl3.unity
+    guid: 838f3722a40ec494582224aa7d638d60
   - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl3.unity
-    guid: d9d7036c45343de42aea3031d1d1ca55
+    path: Assets/Scenes/Completed Scenes/Lvl4.unity
+    guid: 88106a5fa96d9e34c92433fb7594fcab
   - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl4.unity
-    guid: ab9e59d2a30b9284cba8f37970233b7c
-  - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl5.unity
-    guid: 09619ce969de34542b6812ee903a96d7
-  - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl6.unity
-    guid: 4430ca47712291548a84c07a34543d1b
-  - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl7.unity
-    guid: a6f93baa230fec74da823f04f4c0c39d
-  - enabled: 1
-    path: Assets/Scenes/Completed Scenes/New Folder/Lvl8.unity
-    guid: 08a6e423c344ef94ba66ba6758c6918d
+    path: Assets/Scenes/Completed Scenes/Lvl5.unity
+    guid: 33ab2582419c0344f8a181028ae5bf26
   - enabled: 1
     path: Assets/Scenes/Completed Scenes/Game Over.unity
     guid: 76f431fefc45c4d4e96ba55db17c5b9b

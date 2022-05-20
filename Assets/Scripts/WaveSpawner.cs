@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class WaveSpawner : MonoBehaviour
 {
+    
     public static int EnemiesAlive = 0;
 
+    public int lvl;
     public Wave[] waves;
     public Transform enemyPrefab;
     
@@ -19,19 +21,22 @@ public class WaveSpawner : MonoBehaviour
     public Text waveCountdownText;
 
     private int waveIndex = 1;
+    void Awake()
+    {
+        EnemiesAlive = 0;
+    }
 
     void Update ()
     {
         if(EnemiesAlive > 0)
         {
+           
             return;
         }
-        else
-        {
-
-        }
+        
         if(countdown <= 0f)
         {
+            
             StartCoroutine(SpawnWave());
             countdown = timeBetweenWaves;
             return;
@@ -57,7 +62,7 @@ public class WaveSpawner : MonoBehaviour
             Debug.Log("Level Won!");
             this.enabled = false;
             SceneManager.LoadScene("Stage Lvl");
-            PlayerPrefs.SetInt("levelReached", 3);
+            PlayerPrefs.SetInt("levelReached", lvl);
         }
        
     }
