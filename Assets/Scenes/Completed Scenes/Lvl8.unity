@@ -8313,7 +8313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2bb0a461214514c87b7a3724290d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1000
+  startMoney: 0
   startLives: 3
 --- !u!114 &2090501951
 MonoBehaviour:
