@@ -6567,14 +6567,14 @@ MonoBehaviour:
     count: 5
     rate: 1
   - enemy: {fileID: 1284179319139949626, guid: c83ab3bfc624bdf4194da8a447f80508, type: 3}
-    count: 5
-    rate: 1
+    count: 15
+    rate: 0.8
   - enemy: {fileID: 820807386623352080, guid: b28a7271107915547abd1d816ac0e29e, type: 3}
     count: 10
-    rate: 1
+    rate: 0.7
   - enemy: {fileID: 5232901623403894244, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
-    count: 10
-    rate: 1
+    count: 20
+    rate: 0.5
   enemyPrefab: {fileID: 4887761163564978014, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
   spawnPoint: {fileID: 665442958}
   timeBetweenWaves: 5

@@ -4233,21 +4233,12 @@ MonoBehaviour:
   - enemy: {fileID: 5232901623403894244, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
     count: 5
     rate: 1
-  - enemy: {fileID: 4490528143306422331, guid: 89367809c23b8c34bb537ac2bed56f79, type: 3}
+  - enemy: {fileID: 5232901623403894244, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
     count: 2
     rate: 1
-  - enemy: {fileID: 3801927573573612941, guid: c906cadffd506eb45aa0efc578e8f743, type: 3}
-    count: 5
-    rate: 1
-  - enemy: {fileID: 1284179319139949626, guid: c83ab3bfc624bdf4194da8a447f80508, type: 3}
-    count: 5
-    rate: 1
-  - enemy: {fileID: 820807386623352080, guid: b28a7271107915547abd1d816ac0e29e, type: 3}
-    count: 10
-    rate: 1
-  - enemy: {fileID: 6223928049277118743, guid: 71cb721affc0b764980af881eb829171, type: 3}
-    count: 10
-    rate: 1
+  - enemy: {fileID: 5232901623403894244, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
+    count: 3
+    rate: 0.7
   enemyPrefab: {fileID: 4887761163564978014, guid: 00314dac54dcd364381cca1006282d4b, type: 3}
   spawnPoint: {fileID: 665442958}
   timeBetweenWaves: 5
@@ -4293,7 +4284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2bb0a461214514c87b7a3724290d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 0
+  startMoney: 1000
   startLives: 3
 --- !u!114 &2090501951
 MonoBehaviour:

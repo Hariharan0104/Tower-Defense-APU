@@ -28,12 +28,22 @@ public class WaveSpawner : MonoBehaviour
 
     void Update ()
     {
+         
         if(EnemiesAlive > 0)
         {
            
             return;
         }
-        
+        if(waveIndex == waves.Length && EnemiesAlive <=0)
+        {
+            if(waveIndex == waves.Length )
+        {
+            Debug.Log("Level Won!");
+            this.enabled = false;
+            SceneManager.LoadScene("Stage Lvl");
+            PlayerPrefs.SetInt("levelReached", lvl);
+        }
+        }
         if(countdown <= 0f)
         {
             
@@ -57,13 +67,13 @@ public class WaveSpawner : MonoBehaviour
         }
         waveIndex++;
 
-        if(waveIndex == waves.Length)
-        {
-            Debug.Log("Level Won!");
-            this.enabled = false;
-            SceneManager.LoadScene("Stage Lvl");
-            PlayerPrefs.SetInt("levelReached", lvl);
-        }
+        // if(waveIndex == waves.Length )
+        // {
+        //     Debug.Log("Level Won!");
+        //     this.enabled = false;
+        //     SceneManager.LoadScene("Stage Lvl");
+        //     PlayerPrefs.SetInt("levelReached", lvl);
+        // }
        
     }
 

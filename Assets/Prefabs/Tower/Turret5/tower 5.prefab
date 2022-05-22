@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  range: 15
+  range: 2
   enemyTag: Enemy
   fireRate: 1
   damageOverTime: 30
